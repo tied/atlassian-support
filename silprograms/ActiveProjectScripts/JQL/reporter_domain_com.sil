@@ -1,0 +1,9 @@
+
+string [] keys = selectIssues("project = 'HQIT' and region = 'India' and status not in (Declined, Done)");
+string [] ret;
+for(string k in keys) {
+   if (	matches((string)userEmailAddress(%k%.reporter),".*com")){
+       ret +=k;
+   }
+}
+return ret;
