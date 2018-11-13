@@ -1,0 +1,9 @@
+
+string [] keys = selectIssues("project = 'HQIT' and region = 'India' and status not in (Declined, Done) and 'Time to resolution' = breached() ORDER BY 'Time to resolution' ASC ");
+string [] ret;
+for(string k in keys) {
+   if (	matches((string)userEmailAddress(%k%.reporter),".*in")){
+       ret +=k;
+   }
+}
+return ret;
