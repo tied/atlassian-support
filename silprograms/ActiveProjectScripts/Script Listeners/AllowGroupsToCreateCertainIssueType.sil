@@ -1,0 +1,15 @@
+// used to determine which groups of users can create a certain issue type
+// this script is used to respond to tikcet: WWAPPS-3395
+
+string project = "LD"; //the project key
+string[] groups = {"Lease Administration", "Treasury"}; // the groups that need to be checked
+
+// string[] allowedTypes = {"Support Request", "Service Request"}; //the array of the issue types to allow
+string[] restrictTypes = {"Service Request"}; //the array of the issue types to restrict
+
+ 
+if(userInGroup(groups, currentUser()) == 0) {  
+
+    lfRestrictSelectOptions("issueType", restrictTypes); // if the user is not part of the groups he is restricted to select a certain issuetype
+    
+}
