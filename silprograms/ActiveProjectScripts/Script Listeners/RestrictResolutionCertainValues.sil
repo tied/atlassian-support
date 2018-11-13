@@ -1,0 +1,3 @@
+// Script for the HQIT project to restrict Resolution values
+
+lfAllowSelectOptions("resolution", {"Done", "Duplicate", "Escalated", "Rejected"});
