@@ -1,0 +1,6 @@
+if(customfield_13758 == "Fixed"){
+    if(customfield_13928 == ""){
+         return false, "customfield_13928", "Postmortem field must not be empty!";
+    }
+    return true;
+}
