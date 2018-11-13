@@ -1,0 +1,16 @@
+//  project = HQIT AND issuetype = "Master Data" AND "Business Unit" is not EMPTY AND labels is EMPTY
+string [] issues = selectIssues("project = HQIT AND issuetype = \"Master Data\" AND \"Business Unit\" is not EMPTY AND labels is EMPTY");
+
+//Loop section
+    for(string i in issues) {
+      
+        if(isNotNull(%i%.dueDate)) {
+            if(%i%.dueDate + "1d" < currentDate()){
+            %i%.customfield_13016="";
+        }
+    }
+     //Action section
+     admReindexIssue(i);
+ 
+}//end Loop section
+
