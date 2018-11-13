@@ -1,0 +1,6 @@
+if(customfield_13758 == "Fixed"){
+    if(customfield_13928 == ""){
+         return false, "customfield_13803", "Steps to reproduce must not be empty!";
+    }
+    return true;
+}
