@@ -1,0 +1,29 @@
+boolean prjExist = admProjectExists("WWSSD");
+
+
+//  script fro the WWSSD project → response to WWAPPS-3736
+if(isNotNull(prjExist)){
+    if(customfield_11300 == "wwssd/62b2b391-a32d-4a5d-ab2a-07527dda1e49"){
+        if(customfield_13000 == "Brazil"){
+               assignee = "bbarizza";
+        }
+    }
+}
+
+//  script fro the WWSSD project → response to WWAPPS-3758
+if(isNotNull(prjExist)){
+    if(customfield_11300 == "wwssd/62b2b391-a32d-4a5d-ab2a-07527dda1e49"){
+        if(customfield_13000 == "EMEA, IL & AUS"){
+               assignee = "travis.spano";
+        }
+    }
+}
+
+//  script fro the WWSSD project → response to WWAPPS-3759
+if(isNotNull(prjExist)){
+    if(customfield_11300 == "wwssd/62b2b391-a32d-4a5d-ab2a-07527dda1e49"){
+        if(customfield_13000 == "US/CAD East"){
+               assignee = "saud.ahmed";
+        }
+    }
+}
