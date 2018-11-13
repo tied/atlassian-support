@@ -1,6 +1,6 @@
 # atlassian-support
 
-Contents
+## What's here?
 
-silprograms = Power Scripts SIL scripts
-groovy-scripts = Groovy scripts (for ScriptRunner, etc.)
+- silprograms = Power Scripts SIL scripts
+- groovy-scripts = Groovy scripts (for ScriptRunner, etc.)
