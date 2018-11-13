@@ -1,0 +1,23 @@
+if(issueType == "Bug"){
+    if(customfield_13803 == ""){
+         return false, "customfield_13803", "Steps to reproduce must not be empty!";
+    }
+    return true;
+}
+
+if(issueType == "Story"){
+    if(customfield_10500 == ""){
+         return false, "customfield_10500", "Acceptance Criteria must not be empty!";
+    }
+    return true;
+}
+
+if(issueType == "Task"){
+    if(customfield_10500 == ""){
+         return false, "customfield_10500", "Acceptance Criteria must not be empty!";
+    }
+    if(customfield_13759 == ""){
+         return false, "customfield_13759", "Problem Statement must not be empty!";
+    }   
+        return true;
+}
