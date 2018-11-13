@@ -1,0 +1,12 @@
+// this is a script for the LD project
+
+
+string project = "LD"; //the project key
+string[] forbiddenTypes = {"Support Request"}; //the array of the issue types to restrict
+string[] groups = {"Lease Administration", "Treasury"};
+//userInGroup(groups, currentUser());
+
+
+if(userInGroup(groups, currentUser()) != 1) {
+ lfRestrictSelectOptions("issueType", forbiddenTypes);
+}
