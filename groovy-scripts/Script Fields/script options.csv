@@ -1,6 +1,6 @@
 No.,Field Name,Field Description,Note,Template
 1,Days Remaining,,,Duration
-,,,,
+
 2,Today's date,Date of today,,Absolute Date Time
-,,,,
+
 3,Tasks Completed,,,Text field (multi line)
