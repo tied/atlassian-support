@@ -1,0 +1,2 @@
+// this is a script for the ESS project caused by WWAPPS-3828
+lfAllowSelectOptions("priority", {"P1", "P2", "P3", "P4"});
