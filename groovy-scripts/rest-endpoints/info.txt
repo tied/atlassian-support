@@ -1,1 +1,0 @@
-In the REST Endpoints folder are stored all scripts from WeWork Script Runner REST Endpoints setion. 
