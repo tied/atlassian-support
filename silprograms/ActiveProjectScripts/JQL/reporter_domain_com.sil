@@ -1,8 +1,8 @@
 
-string [] keys = selectIssues("project = 'HQIT' and region = 'India' and status not in (Declined, Done)");
+string [] keys = selectIssues(argv[1]); // "project = 'HQIT' and region = 'India' and status not in (Declined, Done)" se adauga un filtru
 string [] ret;
 for(string k in keys) {
-   if (	matches((string)userEmailAddress(%k%.reporter),".*com")){
+   if (	endsWith(userEmailAddress(%k%.reporter),argv[0])){  // com sau in terminatia mailului dupa care sa caute
        ret +=k;
    }
 }
