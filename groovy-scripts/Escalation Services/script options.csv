@@ -1,0 +1,4 @@
+No.,Description,JQL Query,As User,Interval/CRON Expression,Action,Additional issue actions,Transition Options
+1,HQIT archive issues,"project = HQIT AND issuetype = ""Master Data"" AND ""Business Unit"" is not EMPTY AND labels is EMPTY AND level is EMPTY ",alexandra.mateescu,1,None,01-HQIT archive issues-30.10.2018.txt,
+2,HQIT script - email delete value ,"project = HQIT AND issuetype = ""Master Data"" AND ""Business Unit"" is not EMPTY AND labels is EMPTY AND duedate < now()",alexandra.mateescu,2,None,02-HQIT-script-email-delete-value.txt,
+3,Script - repair email by getting old value from field history,"project = HQIT AND issuetype = ""Master Data"" AND ""Business Unit"" is not EMPTY AND labels is EMPTY AND duedate > now()",alexandra.mateescu,2,None,03-Script-repair-email-by-getting-old-value-from-field-history.txt,
